@@ -5,8 +5,7 @@ import re
 app = Flask(__name__)
 
 model = gensim.models.KeyedVectors.load_word2vec_format(
-    # これはpythonanywhere上のパスで、普通は"./wiki.vec_nva_150_100_10_1.pt"
-    "/home/aokikoshiro/word2vec-demo/wiki.vec_nva_150_100_10_1.pt",
+    "./wiki.vec_nva_150_100_10_1.pt",
     binary=True,
 )
 
